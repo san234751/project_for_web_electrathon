@@ -12,6 +12,33 @@
             flex-direction: row;
             padding: 5px;
         }
+        a:link {
+        text-decoration: none;
+        color: green;
+        }
+
+        /* visited link */
+        a:visited {
+        color: red;
+        text-decoration: none;
+        }
+
+        /* mouse over link */
+        a:hover {
+        color: blue;
+        text-decoration: underline;
+        }
+        a:active{
+            text-decoration: underline;
+        }
+        .footer__ {
+            background-color: grey;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 20px;
+        }
     </style>
 </head>
 
@@ -240,6 +267,7 @@
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
+            <%-include('partials/footer')%>
 </body>
 
 </html>

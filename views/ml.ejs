@@ -9,11 +9,36 @@
 
     <link rel="stylesheet" href="https://use.typekit.net/mrg0hpc.css">
     <title>Machine Learning</title>
+        <style>
+        .footer__ {
+            background-color: grey;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 20px;
+        }
+        a:link {
+        text-decoration: none;
+        color: green;
+        }
 
-    <link rel="stylesheet" id="custom-style-css"
-        href="https://www.geeksforgeeks.org/wp-content/themes/iconic-one/css/gfg.min.css?ver=8.59" media="all">
+        /* visited link */
+        a:visited {
+        color: red;
+        text-decoration: none;
+        }
 
-
+        /* mouse over link */
+        a:hover {
+        color: blue;
+        text-decoration: underline;
+        }
+        a:active{
+            text-decoration: underline;
+        }
+        
+    </style>
 </head>
 
 <body>
@@ -582,6 +607,7 @@
                                 target="_blank">What is AutoML in Machine Learning?</a></li>
                         <li><a href="https://www.geeksforgeeks.org/confusion-matrix-machine-learning/" rel="noopener"
                                 target="_blank">Confusion Matrix in Machine Learning</a>
+                                <%-include('partials/footer')%>
 </body>
 
 </html>
