@@ -8,7 +8,12 @@ app.set("view engine","ejs");
 app.get("/",(req,res)=>{
     res.render("index");
 })
-
+app.get("/dsa",(req,res)=>{
+    res.render("dsa");
+})
+app.get("/web",(req,res)=>{
+    res.render("web");
+})
 app.listen(port,()=>{
     console.log(`server running at http://localhost:${port}/`);
 });
