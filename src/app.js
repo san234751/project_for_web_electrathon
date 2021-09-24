@@ -14,6 +14,9 @@ app.get("/dsa",(req,res)=>{
 app.get("/web",(req,res)=>{
     res.render("web");
 })
+app.get("/ML",(req,res)=>{
+    res.render("ml");
+})
 app.listen(port,()=>{
     console.log(`server running at http://localhost:${port}/`);
 });
