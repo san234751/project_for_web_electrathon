@@ -1,0 +1,45 @@
+a:link {
+    text-decoration: none;
+    color: green;
+  }
+  body{
+    font-size: 20px;
+  }
+  /* visited link */
+  a:visited {
+    color: red;
+    text-decoration: none;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: blue;
+    text-decoration: underline;
+  }
+  a:active {
+    text-decoration: underline;
+  }
+  
+  ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  li {
+    color: rgba(33, 126, 33, 0.63);
+  }
+  
+  .footer__ {
+    background-color: grey;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+  
