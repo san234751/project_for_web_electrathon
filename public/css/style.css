@@ -1,13 +1,33 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
+    color: white;
+    background-color: lightcoral;
+}
+
+a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    margin-bottom: 1px;
+    color: black;
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+.footer__ {
+    background-color: grey;
     color: white;
 }
-h4
-{
-    background-color: tomato;
-    color: red;
+
+a:hover {
+    color: green;
+    z-index: +15;
 }
