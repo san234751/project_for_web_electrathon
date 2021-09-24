@@ -29,5 +29,5 @@ a {
 
 a:hover {
     color: green;
-    z-index: +15;
+    z-index: 15;
 }
