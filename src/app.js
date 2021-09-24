@@ -17,6 +17,9 @@ app.get("/web",(req,res)=>{
 app.get("/ML",(req,res)=>{
     res.render("ml");
 })
+app.get("/iot",(req,res)=>{
+    res.render("iot");
+})
 app.listen(port,()=>{
     console.log(`server running at http://localhost:${port}/`);
 });
