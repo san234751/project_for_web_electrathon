@@ -1,6 +1,6 @@
 const express=require("express");
 const path=require("path");
-const port=process.env.port || 3000;
+const port=process.env.port || 8000;
 app=express();
 const path_main=path.join(__dirname+"../public");
 app.use(express.static(path_main));
@@ -10,5 +10,5 @@ app.get("/",(req,res)=>{
 })
 
 app.listen(port,()=>{
-    console.log("server running");
+    console.log(`server running at http://localhost:${port}/`);
 });
