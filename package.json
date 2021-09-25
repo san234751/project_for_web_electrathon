@@ -1,12 +1,11 @@
 {
   "name": "project_for_web_electrathon",
   "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
+  "description": "this is only fo",
+  "main": "index.js",
   "scripts": {
     "start": "nodemon src/app.js"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
