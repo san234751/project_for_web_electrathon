@@ -6,103 +6,87 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Data structure and algorithms</title>
         <link rel="stylesheet" href="/css/dsa.css">
+        <style>
+                .container {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                        padding: 5px;
+                }
+                .container iframe{
+                        width: 24%;
+                        height: 315px;
+                }
+                @media only screen and (max-width: 1000px){
+                        .container {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+                        }
+                        .container iframe{width: 98%;}
+                }
+        </style>
 </head>
-
 <body>
         <%-include('partials/navbar')%>
-        <h2>Data Structures</h2>
-        <p>A <strong>data structure</strong> is a particular way of organizing data in a computer so that it can be used effectively.</p>
-        <h3>Topics:</h3>
-        <div>
-                <ul>
-                        <li>Array</li>
-                        <li>Binary Tree</li>
-                        <li>Graph</li>
-                </ul>
-                <ul>
-                        <li>Linked List</li>
-                        <li>Binary Search</li>
-                        <li>Matrix</li>
-                </ul>
-                <ul>
-                        <li>Stack</li>
-                        <li>Heap</li>
-                        <li>Misc</li>
-                </ul>
-                <ul>
-                        <li>Queue</li>
-                        <li>Hashing</li>
-                        <li>Advanced Data Structures</li>
-                </ul>
+        <div style="border: 2px solid red; border-radius: 20px;padding: 20px; margin: 20px;">
+                <h2>Data Structures</h2>
+                <p>A <strong>data structure</strong> is a particular way of organizing data in a computer so that it can be used effectively.</p>
+                <h3>Topics:</h3>
+                <div>
+                        <ul>
+                                <li>Array</li>
+                                <li>Binary Tree</li>
+                                <li>Graph</li>
+                        </ul>
+                        <ul>
+                                <li>Linked List</li>
+                                <li>Binary Search</li>
+                                <li>Matrix</li>
+                        </ul>
+                        <ul>
+                                <li>Stack</li>
+                                <li>Heap</li>
+                                <li>Misc</li>
+                        </ul>
+                        <ul>
+                                <li>Queue</li>
+                                <li>Hashing</li>
+                                <li>Advanced Data Structures</li>
+                        </ul>
+                </div>
         </div>
-        <p><em><strong>Singly Linked List:</strong></em></p>
-        <ol>
-                <li><a href="http://geeksquiz.com/linked-list-set-1-introduction/" target="_blank">Introduction
-                                to Linked
-                                List</a></li>
+        <p style="text-align:center"><em><strong>Singly Linked List:</strong></em></p>
+        <ol style="border: 2px solid red; border-radius: 20px;padding: 20px; margin: 20px;">
+                <li><a href="http://geeksquiz.com/linked-list-set-1-introduction/" target="_blank">Introduction to Linked List</a></li>
                 <li><a href="https://www.geeksforgeeks.org/linked-list-vs-array/">Linked List vs Array</a></li>
-                <li><a href="http://geeksquiz.com/linked-list-set-2-inserting-a-node/" target="_blank">Linked
-                                List Insertion</a>
-                </li>
-                <li><a href="http://geeksquiz.com/linked-list-set-3-deleting-node/" rel="bookmark">Linked List
-                                Deletion
-                                (Deleting a given key)</a></li>
-                <li><a href="http://geeksquiz.com/delete-a-linked-list-node-at-a-given-position/"
-                                rel="bookmark">Linked List
-                                Deletion (Deleting a key at given position)</a></li>
-                <li><a href="http://geeksquiz.com/programmers-approach-looking-array-vs-linked-list/"
-                                rel="bookmark">A
-                                Programmer’s approach of looking at Array vs. Linked List</a></li>
-                <li><a href="http://geeksquiz.com/find-length-of-a-linked-list-iterative-and-recursive/"
-                                rel="bookmark">Find
-                                Length of a Linked List (Iterative and Recursive)</a></li>
-                <li><a href="https://www.geeksforgeeks.org/how-to-write-functions-that-modify-the-head-pointer-of-a-linked-list/">How
-                                to write C functions that modify head pointer of a Linked List?</a></li>
-                <li><a href="https://www.geeksforgeeks.org/swap-nodes-in-a-linked-list-without-swapping-data/"
-                                rel="bookmark">Swap nodes in a linked list without swapping data</a></li>
-                <li><a href="https://www.geeksforgeeks.org/write-a-function-to-reverse-the-nodes-of-a-linked-list/">Reverse
-                                a
-                                linked list</a></li>
-                <li><a href="https://www.geeksforgeeks.org/merge-two-sorted-linked-lists/">Merge two sorted
-                                linked lists</a>
-                </li>
-                <li><a href="https://www.geeksforgeeks.org/merge-sort-for-linked-list/">Merge Sort for Linked
-                                Lists</a></li>
-                <li><a href="https://www.geeksforgeeks.org/reverse-a-list-in-groups-of-given-size/">Reverse a
-                                Linked List in
-                                groups of given size</a></li>
-                <li><a href="https://www.geeksforgeeks.org/detect-and-remove-loop-in-a-linked-list/">Detect and
-                                Remove Loop in a
-                                Linked List</a></li>
-                <li><a href="https://www.geeksforgeeks.org/add-two-numbers-represented-by-linked-lists/">Add two
-                                numbers
-                                represented by linked lists | Set 1</a></li>
+                <li><a href="http://geeksquiz.com/linked-list-set-2-inserting-a-node/" target="_blank">Linked List Insertion</a></li>
+                <li><a href="http://geeksquiz.com/linked-list-set-3-deleting-node/" rel="bookmark">Linked List Deletion (Deleting a given key)</a></li>
+                <li><a href="http://geeksquiz.com/delete-a-linked-list-node-at-a-given-position/" rel="bookmark">Linked List Deletion (Deleting a key at given position)</a></li>
+                <li><a href="http://geeksquiz.com/programmers-approach-looking-array-vs-linked-list/" rel="bookmark">A Programmer’s approach of looking at Array vs. Linked List</a></li>
+                <li><a href="http://geeksquiz.com/find-length-of-a-linked-list-iterative-and-recursive/" rel="bookmark">Find Length of a Linked List (Iterative and Recursive)</a></li>
+                <li><a href="https://www.geeksforgeeks.org/how-to-write-functions-that-modify-the-head-pointer-of-a-linked-list/">How to write C functions that modify head pointer of a Linked List?</a></li>
+                <li><a href="https://www.geeksforgeeks.org/swap-nodes-in-a-linked-list-without-swapping-data/" rel="bookmark">Swap nodes in a linked list without swapping data</a></li>
+                <li><a href="https://www.geeksforgeeks.org/write-a-function-to-reverse-the-nodes-of-a-linked-list/">Reverse a linked list</a></li>
+                <li><a href="https://www.geeksforgeeks.org/merge-two-sorted-linked-lists/">Merge two sorted linked lists</a></li>
+                <li><a href="https://www.geeksforgeeks.org/merge-sort-for-linked-list/">Merge Sort for Linked Lists</a></li>
+                <li><a href="https://www.geeksforgeeks.org/reverse-a-list-in-groups-of-given-size/">Reverse a Linked List in groups of given size</a></li>
+                <li><a href="https://www.geeksforgeeks.org/detect-and-remove-loop-in-a-linked-list/">Detect and Remove Loop in a Linked List</a></li>
+                <li><a href="https://www.geeksforgeeks.org/add-two-numbers-represented-by-linked-lists/">Add two numbers represented by linked lists | Set 1</a></li>
                 <li><a href="https://www.geeksforgeeks.org/rotate-a-linked-list/">Rotate a Linked List</a></li>
-                <li><a href="https://www.geeksforgeeks.org/generic-linked-list-in-c-2/" rel="bookmark">Generic
-                                Linked List in
-                                C</a></li>
+                <li><a href="https://www.geeksforgeeks.org/generic-linked-list-in-c-2/" rel="bookmark">Generic Linked List in C</a></li>
         </ol>
-
-        <p><em><strong>Circular Linked List:</strong></em></p>
-        <ol>
-                <li><a href="http://geeksquiz.com/circular-linked-list/" rel="bookmark">Circular Linked List
-                                Introduction and
-                                Applications,</a></li>
-                <li><a href="https://www.geeksforgeeks.org/circular-singly-linked-list-insertion/">Circular
-                                Singly Linked List
-                                Insertion&lt;</a></li>
-                <li><a href="http://geeksquiz.com/circular-linked-list-set-2-traversal/"
-                                target="_blank">Circular Linked List
-                                Traversal</a></li>
-                <li><a href="https://www.geeksforgeeks.org/split-a-circular-linked-list-into-two-halves/">Split
-                                a Circular
-                                Linked List into two halves</a></li>
-                <li><a href="https://www.geeksforgeeks.org/sorted-insert-for-circular-linked-list/">Sorted
-                                insert for circular
-                                linked list</a></li>
+        <p style="text-align:center"><em><strong>Circular Linked List:</strong></em></p>
+        <ol style="border: 2px solid red; border-radius: 20px;padding: 20px; margin: 20px;">
+                <li><a href="http://geeksquiz.com/circular-linked-list/" rel="bookmark">Circular Linked List Introduction and Applications,</a></li>
+                <li><a href="https://www.geeksforgeeks.org/circular-singly-linked-list-insertion/">Circular Singly Linked List Insertion&lt;</a></li>
+                <li><a href="http://geeksquiz.com/circular-linked-list-set-2-traversal/" target="_blank">Circular Linked List Traversal</a></li>
+                <li><a href="https://www.geeksforgeeks.org/split-a-circular-linked-list-into-two-halves/">Split a Circular Linked List into two halves</a></li>
+                <li><a href="https://www.geeksforgeeks.org/sorted-insert-for-circular-linked-list/">Sorted insert for circular linked list</a></li>
         </ol>
-        <p><em><strong>Doubly Linked List:</strong></em></p>
-        <ol>
+        <p style="text-align:center"><em><strong>Doubly Linked List:</strong></em></p>
+        <ol style="border: 2px solid red; border-radius: 20px;padding: 20px; margin: 20px;">
                 <li><a href="http://geeksquiz.com/doubly-linked-list/" rel="bookmark">Doubly Linked List
                                 Introduction and
                                 Insertion</a></li>
@@ -119,19 +103,18 @@
                 <li><a href="https://www.geeksforgeeks.org/merge-sort-for-doubly-linked-list/"
                                 rel="bookmark">Merge Sort for
                                 Doubly Linked List</a></li>
+                                <p><strong><a href="https://www.geeksforgeeks.org/data-structures/linked-list/">All Articles of Linked
+                                                        List</a></strong><br><a href="http://geeksquiz.com/data-structure/linked-list/"
+                                                target="_blank">Quiz on
+                                                Linked List</a><br><a
+                                                href="https://practice.geeksforgeeks.org/topics/Linked-List/">Coding Practice on
+                                                Linked List</a><br><a href="https://www.geeksforgeeks.org/category/linked-list/">Recent
+                                                Articles on Linked
+                                                List</a></p>
         </ol>
-        <p><strong><a href="https://www.geeksforgeeks.org/data-structures/linked-list/">All Articles of Linked
-                                List</a></strong><br><a href="http://geeksquiz.com/data-structure/linked-list/"
-                        target="_blank">Quiz on
-                        Linked List</a><br><a
-                        href="https://practice.geeksforgeeks.org/topics/Linked-List/">Coding Practice on
-                        Linked List</a><br><a href="https://www.geeksforgeeks.org/category/linked-list/">Recent
-                        Articles on Linked
-                        List</a></p>
-
 
         <p style="text-align:center"><strong><a name="Stack"></a>Stack:</strong></p>
-        <ol>
+        <ol style="border: 2px solid red; border-radius: 20px;padding: 20px; margin: 20px;">
                 <li><a href="http://geeksquiz.com/stack-set-1/" target="_blank">Introduction to Stack</a></li>
                 <li><a href="http://geeksquiz.com/stack-set-2-infix-to-postfix/" target="_blank">Infix to
                                 Postfix Conversion
@@ -168,18 +151,11 @@
                 <li><a href="https://www.geeksforgeeks.org/efficiently-implement-k-stacks-single-array/"
                                 rel="bookmark">How to
                                 efficiently implement k stacks in a single array?</a></li>
-                <li><a href="https://www.geeksforgeeks.org/sort-a-stack-using-recursion/">Sort a stack using
-                                recursion</a></li>
+                <li><a href="https://www.geeksforgeeks.org/sort-a-stack-using-recursion/">Sort a stack using recursion</a></li>
+                <p><a href="http://geeksquiz.com/data-structure/stack/">Quiz on Stack</a><br><strong><a href="https://www.geeksforgeeks.org/stack/">All Articles on Stack</a></strong><br> <a href="https://practice.geeksforgeeks.org/topics/Stack/">Coding Practice on Stack</a><br> <a href="https://www.geeksforgeeks.org/category/stack/">Recent Articles on Stack</a></p>
         </ol>
-        <p><a href="http://geeksquiz.com/data-structure/stack/">Quiz on Stack</a><br><strong><a
-                                href="https://www.geeksforgeeks.org/stack/">All Articles on
-                                Stack</a></strong><br><a
-                        href="https://practice.geeksforgeeks.org/topics/Stack/">Coding Practice on
-                        Stack</a><br><a href="https://www.geeksforgeeks.org/category/stack/">Recent Articles on
-                        Stack</a></p>
-
         <p style="text-align:center"><strong><a name="Queue"></a>Queue:</strong></p>
-        <ol>
+        <ol style="border: 2px solid red; border-radius: 20px;padding: 20px; margin: 20px;">
                 <li><a href="http://geeksquiz.com/queue-set-1introduction-and-array-implementation/"
                                 target="_blank">Queue
                                 Introduction and Array Implementation</a></li>
@@ -212,17 +188,16 @@
                 <li><a href="https://www.geeksforgeeks.org/efficiently-implement-k-queues-single-array/"
                                 rel="bookmark">How to
                                 efficiently implement k Queues in a single array?</a></li>
+                                <p><a href="http://geeksquiz.com/data-structure/queue/">Quiz on Queue</a><br><strong><a
+                                                        href="https://www.geeksforgeeks.org/queue/">All Articles on
+                                                        Queue</a></strong><br><a
+                                                href="https://practice.geeksforgeeks.org/topics/Queue/">Coding Practice on
+                                                Queue</a><br><a href="https://www.geeksforgeeks.org/category/queue/">Recent Articles on
+                                                Queue</a></p>
         </ol>
-        <p><a href="http://geeksquiz.com/data-structure/queue/">Quiz on Queue</a><br><strong><a
-                                href="https://www.geeksforgeeks.org/queue/">All Articles on
-                                Queue</a></strong><br><a
-                        href="https://practice.geeksforgeeks.org/topics/Queue/">Coding Practice on
-                        Queue</a><br><a href="https://www.geeksforgeeks.org/category/queue/">Recent Articles on
-                        Queue</a></p>
         <p>&nbsp;</p>
-
         <p style="text-align:center"><strong><a name="BinaryTree"></a>Binary Tree:</strong></p>
-        <ol>
+        <ol style="border: 2px solid red; border-radius: 20px;padding: 20px; margin: 20px;">
                 <li><a href="http://geeksquiz.com/binary-tree-set-1-introduction/" target="_blank">Binary Tree
                                 Introduction</a>
                 </li>
@@ -279,31 +254,21 @@
                                 binary tree is subtree of another binary tree</a></li>
                 <li><a href="https://www.geeksforgeeks.org/connect-nodes-at-same-level/">Connect nodes at same
                                 level</a></li>
+                                <p><a href="http://geeksquiz.com/data-structure/binary-trees/" target="_blank">Quiz on Binary
+                                                Tree</a><br><a href="http://geeksquiz.com/data-structure/tree-traversals/"
+                                                target="_blank">Quiz on Binary Tree
+                                                Traversals</a><br><strong><a href="https://www.geeksforgeeks.org/binary-tree-2/">All
+                                                        articles on Binary
+                                                        Tree</a></strong><br><a
+                                                href="https://practice.geeksforgeeks.org/topics/Tree/">Coding Practice on Binary
+                                                Tree</a><br><a href="https://www.geeksforgeeks.org/category/tree/">Recent Articles on
+                                                Tree</a></p>
         </ol>
-        <p><a href="http://geeksquiz.com/data-structure/binary-trees/" target="_blank">Quiz on Binary
-                        Tree</a><br><a href="http://geeksquiz.com/data-structure/tree-traversals/"
-                        target="_blank">Quiz on Binary Tree
-                        Traversals</a><br><strong><a href="https://www.geeksforgeeks.org/binary-tree-2/">All
-                                articles on Binary
-                                Tree</a></strong><br><a
-                        href="https://practice.geeksforgeeks.org/topics/Tree/">Coding Practice on Binary
-                        Tree</a><br><a href="https://www.geeksforgeeks.org/category/tree/">Recent Articles on
-                        Tree</a></p>
 
         <p style="text-align:center"><strong style="font-size:14px;line-height:1.5em"><a
                                 name="BinarySearchTree"></a>Binary
                         Search Tree:</strong></p>
-        <br>
-        <div id="1b4172cd-acc7-4363-9184-3fadd3cdabcf" class="_ap_apex_ad" style="min-height:280px">
-                <script>
-                        var adpushup = window.adpushup = window.adpushup || { que: [] };
-                        adpushup.que.push(function () {
-                                adpushup.triggerAd("1b4172cd-acc7-4363-9184-3fadd3cdabcf");
-                        });
-                </script>
-        </div>
-        <br>
-        <ol>
+        <ol style="border: 2px solid red; border-radius: 20px;padding: 20px; margin: 20px;">
                 <li><a href="http://geeksquiz.com/binary-search-tree-set-1-search-and-insertion/"
                                 target="_blank">Search and
                                 Insert in BST</a></li>
@@ -345,20 +310,20 @@
                 <li><a href="https://www.geeksforgeeks.org/binary-tree-to-binary-search-tree-conversion/">Binary
                                 Tree to Binary
                                 Search Tree Conversion</a></li>
+                                <p><a href="http://geeksquiz.com/data-structure/binary-search-trees/">Quiz on Binary Search
+                                                Trees</a><br><a
+                                                href="http://geeksquiz.com/data-structure/balanced-binary-search-trees/">Quiz on
+                                                Balanced Binary Search
+                                                Trees</a><br><strong><a href="https://www.geeksforgeeks.org/binary-search-tree/">All
+                                                        Articles on Binary
+                                                        Search Tree</a></strong><br><a
+                                                href="https://practice.geeksforgeeks.org/topics/BST/">Coding Practice on
+                                                Binary Search Tree</a><br><a
+                                                href="https://www.geeksforgeeks.org/category/binary-search-tree/">Recent
+                                                Articles on BST</a></p>
         </ol>
-        <p><a href="http://geeksquiz.com/data-structure/binary-search-trees/">Quiz on Binary Search
-                        Trees</a><br><a
-                        href="http://geeksquiz.com/data-structure/balanced-binary-search-trees/">Quiz on
-                        Balanced Binary Search
-                        Trees</a><br><strong><a href="https://www.geeksforgeeks.org/binary-search-tree/">All
-                                Articles on Binary
-                                Search Tree</a></strong><br><a
-                        href="https://practice.geeksforgeeks.org/topics/BST/">Coding Practice on
-                        Binary Search Tree</a><br><a
-                        href="https://www.geeksforgeeks.org/category/binary-search-tree/">Recent
-                        Articles on BST</a></p>
         <p style="text-align:center"><strong><a name="Heap"></a>Heap:</strong></p>
-        <ol>
+        <ol style="border: 2px solid red; border-radius: 20px;padding: 20px; margin: 20px;">
                 <li><a href="http://geeksquiz.com/binary-heap/" rel="bookmark">Binary Heap</a></li>
                 <li><a href="https://www.geeksforgeeks.org/why-is-binary-heap-preferred-over-bst-for-priority-queue/">Why
                                 is
@@ -377,16 +342,16 @@
                 <li><a href="https://www.geeksforgeeks.org/tournament-tree-and-binary-heap/">Tournament Tree
                                 (Winner Tree) and
                                 Binary Heap</a></li>
+                                <p><strong><a href="https://www.geeksforgeeks.org/heap/">All Articles on Heap</a></strong><br><a
+                                                href="http://geeksquiz.com/data-structure/heap/">Quiz on Heap</a><br><a
+                                                href="https://practice.geeksforgeeks.org/tag-page.php?tag=heap&amp;isCmp=0">Coding
+                                                Practice on
+                                                Heap</a><br><a href="https://www.geeksforgeeks.org/category/heap/">Recent Articles on
+                                                Heap</a></p>
         </ol>
-        <p><strong><a href="https://www.geeksforgeeks.org/heap/">All Articles on Heap</a></strong><br><a
-                        href="http://geeksquiz.com/data-structure/heap/">Quiz on Heap</a><br><a
-                        href="https://practice.geeksforgeeks.org/tag-page.php?tag=heap&amp;isCmp=0">Coding
-                        Practice on
-                        Heap</a><br><a href="https://www.geeksforgeeks.org/category/heap/">Recent Articles on
-                        Heap</a></p>
 
         <p style="text-align:center"><strong><a name="Hashing"></a>Hashing:</strong></p>
-        <ol>
+        <ol style="border: 2px solid red; border-radius: 20px;padding: 20px; margin: 20px;">
                 <li><a href="http://geeksquiz.com/hashing-set-1-introduction/" target="_blank">Hashing
                                 Introduction</a></li>
                 <li><a href="http://geeksquiz.com/hashing-set-2-separate-chaining/">Separate Chaining for
@@ -415,18 +380,17 @@
                 <li><a href="https://www.geeksforgeeks.org/find-number-of-employees-under-every-manager/"
                                 rel="bookmark">Find
                                 number of Employees Under every Employee</a></li>
+                                <p><a href="http://geeksquiz.com/data-structure/hash/" target="_blank">Quiz on Hashing</a><br><strong><a
+                                                        href="https://www.geeksforgeeks.org/hashing/">All Articles on
+                                                        Hashing</a></strong><br><a
+                                                href="https://practice.geeksforgeeks.org/topics/Hashing/">Coding Practice on
+                                                Hashing</a><br><a href="https://www.geeksforgeeks.org/category/hash/">Recent Articles on
+                                                Hashing</a></p>
         </ol>
-        <p><a href="http://geeksquiz.com/data-structure/hash/" target="_blank">Quiz on Hashing</a><br><strong><a
-                                href="https://www.geeksforgeeks.org/hashing/">All Articles on
-                                Hashing</a></strong><br><a
-                        href="https://practice.geeksforgeeks.org/topics/Hashing/">Coding Practice on
-                        Hashing</a><br><a href="https://www.geeksforgeeks.org/category/hash/">Recent Articles on
-                        Hashing</a></p>
-        <p>&nbsp;</p>
 
         <p style="text-align:center"><strong><a name="Graph"></a>Graph:</strong></p>
-        <p><em><strong>Introduction, DFS and BFS:</strong></em></p>
-        <ol>
+        <ol style="border: 2px solid red; border-radius: 20px;padding: 20px; margin: 20px;">
+                <p><em><strong>Introduction, DFS and BFS:</strong></em></p>
                 <li><a href="https://www.geeksforgeeks.org/graph-and-its-representations/" rel="bookmark">Graph
                                 and its
                                 representations</a></li>
@@ -472,25 +436,24 @@
                 <li><a href="https://www.geeksforgeeks.org/assign-directions-to-edges-so-that-the-directed-graph-remains-acyclic/"
                                 rel="bookmark">Assign directions to edges so that the directed graph remains
                                 acyclic</a></li>
+                                <p><strong><a href="https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/">All Articles on
+                                                        Graph Data
+                                                        Structure</a></strong><br><a
+                                                href="http://geeksquiz.com/data-structure/graph/">Quiz on Graph</a><br><a
+                                                href="http://geeksquiz.com/algorithms/graph-traversals/">Quiz on Graph
+                                                Traversals</a><br><a href="http://geeksquiz.com/algorithms/graph-shortest-paths/">Quiz
+                                                on Graph Shortest Paths</a><br><a
+                                                href="http://geeksquiz.com/algorithms/graph-minimum-spanning-tree/">Quiz on Graph
+                                                Minimum Spanning
+                                                Tree</a><br><a href="https://practice.geeksforgeeks.org/topics/Graph/">Coding Practice
+                                                on Graph</a><br><a href="https://www.geeksforgeeks.org/category/graph/">Recent Articles
+                                                on Graph</a></p>
         </ol>
-        <p><strong><a href="https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/">All Articles on
-                                Graph Data
-                                Structure</a></strong><br><a
-                        href="http://geeksquiz.com/data-structure/graph/">Quiz on Graph</a><br><a
-                        href="http://geeksquiz.com/algorithms/graph-traversals/">Quiz on Graph
-                        Traversals</a><br><a href="http://geeksquiz.com/algorithms/graph-shortest-paths/">Quiz
-                        on Graph Shortest Paths</a><br><a
-                        href="http://geeksquiz.com/algorithms/graph-minimum-spanning-tree/">Quiz on Graph
-                        Minimum Spanning
-                        Tree</a><br><a href="https://practice.geeksforgeeks.org/topics/Graph/">Coding Practice
-                        on Graph</a><br><a href="https://www.geeksforgeeks.org/category/graph/">Recent Articles
-                        on Graph</a></p>
-        <p>&nbsp;</p>
 
         <p style="text-align:center"><strong><a name="AdvancedDataStructure"></a>Advanced Data
                         Structure:</strong></p>
-        <p><em><strong>Advanced Lists:</strong></em></p>
-        <ol>
+                        <ol style="border: 2px solid red; border-radius: 20px;padding: 20px; margin: 20px;">
+                                <p><em><strong>Advanced Lists:</strong></em></p>
                 <li><a href="https://www.geeksforgeeks.org/memory-efficient-doubly-linked-list/">Memory
                                 efficient doubly linked
                                 list</a></li>
@@ -507,64 +470,28 @@
                                 1 (Introduction)</a></li>
         </ol>
 
-        <a href="https://youtube.com/playlist?list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ">Click here if you want to
+        <h3><a href="https://youtube.com/playlist?list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ">Click here if you want to
                 access the best playlist for
-                DSA </a>
+                DSA </a></h3>
         <h2>Videos for you</h2>
 
         <div class="container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/z9bZufPHFLU"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/PyTK_g1l8V8"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/0JYgnhnZFcE"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/4BBB0mvvbGA"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/z9bZufPHFLU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/PyTK_g1l8V8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/0JYgnhnZFcE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/4BBB0mvvbGA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/YscEcXRmBoY"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Crqgl10aIGQ"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/JvuaAgDar1c"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/BCLfxQja9dI"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/YscEcXRmBoY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/Crqgl10aIGQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/JvuaAgDar1c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/BCLfxQja9dI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/BCLfxQja9dI"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/b7wMv62Y1l4"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/sPeKpctCL-c"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/eGc5TQpBMjA"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/BCLfxQja9dI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/b7wMv62Y1l4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/sPeKpctCL-c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/eGc5TQpBMjA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <%-include('partials/footer')%>
 </body>
